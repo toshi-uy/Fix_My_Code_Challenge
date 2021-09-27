@@ -3,7 +3,7 @@
 class square():
     
     width = 0
-    height = 0
+    height = width
 
     
     def __init__(self, *args, **kwargs):
@@ -15,10 +15,10 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 4)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.width)
+        return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
 
