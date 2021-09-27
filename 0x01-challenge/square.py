@@ -7,10 +7,14 @@ class square():
 
     def __init__(self, width=0, height=0):
         '''initializer'''
-        if type(width) is not int or type(height) is not int:
-            raise TypeError("size must be an integer")
-        if width < 0 or height < 0:
-            raise ValueError("size must be >= 0")
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if type(height) is not int:
+            raise TypeError("height must be an integer")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+        if height < 0:
+            raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
 
@@ -23,9 +27,9 @@ class square():
     def size(self, number):
         """initialization method"""
         if type(number) is not int:
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         if number < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = number
 
     @property
@@ -37,9 +41,9 @@ class square():
     def size(self, number):
         """initialization method"""
         if type(number) is not int:
-            raise TypeError("size must be an integer")
+            raise TypeError("height must be an integer")
         if number < 0:
-            raise ValueError("size must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = number
 
     def area_of_my_square(self):
