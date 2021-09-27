@@ -4,9 +4,6 @@
 class square():
     '''class square'''
 
-    width = 0
-    height = 0
-
     def __init__(self, width=0, height=0):
         '''initializer'''
         self.__width = width
