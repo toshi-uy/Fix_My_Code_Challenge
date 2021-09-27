@@ -7,8 +7,11 @@ class square():
 
     
     def __init__(self, width=0, height=0):
+        if type(width) is not int or type(height) is not int:
+            raise TypeError("size must be an integer")
         if width != height:
-            raise("Width and Height should be equal")
+            raise ValueError("width must be equal to height")
+
         self.width = width
     def area_of_my_square(self):
         """ Area of the square """
