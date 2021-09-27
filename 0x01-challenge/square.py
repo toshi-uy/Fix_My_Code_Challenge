@@ -6,8 +6,8 @@ class square():
     height = 0
 
     
-    def __init__(self, size=0, height=0):
-        self.width = size
+    def __init__(self, width=0, height=0):
+        self.width = width
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.width
