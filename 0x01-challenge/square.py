@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
 class square():
+    '''class square'''
     
     width = 0
     height = 0
 
     
     def __init__(self, width, height):
+        '''initializer'''
         if type(width) is not int or type(height) is not int:
             raise TypeError("width and height must be an integer")
         self.width = width
@@ -45,9 +47,11 @@ class square():
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        '''square perimiter'''
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        '''string representation'''
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
