@@ -7,8 +7,8 @@ class square():
 
     
     def __init__(self, *args, **kwargs):
-        self.height = self.width
         for key, value in kwargs.items():
+            self.height = self.width
             setattr(self, key, value)
 
     def area_of_my_square(self):
