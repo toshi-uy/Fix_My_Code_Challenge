@@ -7,16 +7,18 @@ class square():
 
     
     def __init__(self, width=0, height=0):
+        if width != height:
+            raise("Width and Height should be equal")
         self.width = width
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.width * 2) + (self.width * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.width)
+        return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
 
