@@ -11,11 +11,12 @@ class square():
             raise TypeError("size must be an integer")
         if width != height:
             raise ValueError("width must be equal to height")
-
         self.width = width
+        self.height = height
+
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return self.width * self.height
 
     def PermiterOfMySquare(self):
         return (self.width * 2) + (self.height * 2)
