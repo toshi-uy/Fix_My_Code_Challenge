@@ -6,16 +6,16 @@ class square():
     height = 0
 
     
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         if type(width) is not int or type(height) is not int:
-            raise TypeError("size must be an integer")
+            raise TypeError("width and height must be an integer")
         self.width = width
         self.height = height
 
     @property
     def width(self):
         """Return value of size"""
-        return self.width
+        return self.__width
 
     @width.setter
     def size(self, number):
@@ -24,12 +24,12 @@ class square():
             raise TypeError("size must be an integer")
         if number < 0:
             raise ValueError("size must be >= 0")
-        self.width = number
+        self.__width = number
 
     @property
     def height(self):
         """Return value of size"""
-        return self.height
+        return self.__height
 
     @height.setter
     def size(self, number):
@@ -38,7 +38,7 @@ class square():
             raise TypeError("size must be an integer")
         if number < 0:
             raise ValueError("size must be >= 0")
-        self.height = number
+        self.__height = number
 
     def area_of_my_square(self):
         """ Area of the square """
