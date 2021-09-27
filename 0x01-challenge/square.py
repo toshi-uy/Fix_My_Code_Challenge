@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
+
 class square():
     '''class square'''
-    
+
     width = 0
     height = 0
 
-    
     def __init__(self, width, height):
         '''initializer'''
         if type(width) is not int or type(height) is not int:
