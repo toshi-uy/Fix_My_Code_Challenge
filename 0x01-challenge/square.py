@@ -3,7 +3,7 @@
 class square():
     
     width = 0
-    height = width
+    height = 0
 
     
     def __init__(self, *args, **kwargs):
