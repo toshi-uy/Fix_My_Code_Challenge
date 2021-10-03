@@ -5,7 +5,7 @@
 class square():
     '''class square'''
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         '''initializer'''
         if type(width) is not int:
             raise TypeError("width must be an integer")
