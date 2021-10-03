@@ -19,7 +19,6 @@
     "react-bootstrap": "^0.26.2",
     "react-ga": "^2.1.2",
     "react-router": "^0.13.2",
-    "graceful-fs": "4.2.2",
     "superagent": "^1.1.0"
   },
   "devDependencies": {
@@ -47,6 +46,10 @@
   },
   "main": "bin/www.js",
   "scripts": {
-    "start": "node --use_strict bin/www.js"
+    "start": "node --use_strict bin/www.js",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }
