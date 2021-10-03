@@ -46,6 +46,7 @@
   },
   "main": "bin/www.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "node --use_strict bin/www.js"
   },
   "resolutions": {
